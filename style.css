@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.google{
+    position: relative;
+    border-top:70px solid #ea4335;
+    border-right:70px solid #4285f4;
+    border-bottom:70px solid #34a853;
+    border-left:70px solid #fbbc05;
+    border-radius: 50%;
+    height: 200px;
+    width:200px;
+}
+.google:before{
+    content:"";
+    position: absolute;
+    top:70px;
+    right:-100px;
+    transform: translate(-50%);
+    width: 150px;
+    height: 70px;
+    background-color:#4285f4;
+}
+.google::after{
+    content:"";
+    positioN:absolute;
+    border-top:140px solid transparent;
+    border-right:140px solid white;
+    top:-70px;
+    right:-70px;
+}
